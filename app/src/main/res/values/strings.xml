@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PTApp</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_sign_in">Giriş</string>
+    <string name="action_sign_in_short">Giriş</string>
+    <string name="error_invalid_email">Geçersiz email adresi</string>
+    <string name="error_invalid_password">Şifre en az 6, en çok 12 karakterden oluşmalıdır.</string>
+    <string name="error_incorrect_password">Hatalı şifre!</string>
+    <string name="error_field_required">Zorunlu alan!</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_forgot_password">Şifremi unuttum</string>
+    <string name="action_ok">Tamam</string>
+</resources>
