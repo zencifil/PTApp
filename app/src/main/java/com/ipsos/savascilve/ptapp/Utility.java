@@ -4,6 +4,9 @@ package com.ipsos.savascilve.ptapp;
  * Created by savas.cilve on 03.10.2016.
  */
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
@@ -36,5 +39,16 @@ public class Utility {
      */
     public static boolean isNotNull(String txt){
         return txt != null && txt.trim().length() > 0 ? true : false;
+    }
+
+    public static boolean isConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (cm.getActiveNetworkInfo() != null
+                && cm.getActiveNetworkInfo().isAvailable()
+                && cm.getActiveNetworkInfo().isConnected()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -15,4 +15,15 @@
     </string>
     <string name="action_forgot_password">Şifremi unuttum</string>
     <string name="action_ok">Tamam</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navigation_fam_list">Hane Listesi</string>
+    <string name="navigation_today_list">Bugünkü Ziyaretler</string>
+    <string name="navigation_send_mail">E-Posta Gönder</string>
+    <string name="navigation_communication">İletişim</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

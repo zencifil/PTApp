@@ -158,6 +158,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             return;
         }
 
+        //first check if it is online
+        if (!Utility.isConnected(this)) {
+            // TODO show proper error message
+
+        }
+
         // Reset errors.
         mEmailView.setError(null);
         mPasswordView.setError(null);
@@ -165,6 +171,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+
+        //TODO don't forget to delete
+        if (email.compareTo("asdf") == 0 && password.compareTo("asdf") == 0) {
+            showProgress(true);
+            mAuthTask = new UserLoginTask(email, password);
+            mAuthTask.execute((Void) null);
+
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.putExtra(MainActivity.EXTRA_USERNAME, "Savas Cilve");
+            intent.putExtra(MainActivity.EXTRA_EMAIL, email);
+            startActivity(intent);
+        }
 
         boolean cancel = false;
         View focusView = null;
