@@ -10,6 +10,7 @@
     <string name="error_invalid_password">Şifre en az 6, en çok 12 karakterden oluşmalıdır.</string>
     <string name="error_incorrect_password">Hatalı şifre!</string>
     <string name="error_field_required">Zorunlu alan!</string>
+    <string name="login_success">Giriş başarılı</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
@@ -26,4 +27,7 @@
     <string name="navigation_communication">İletişim</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
