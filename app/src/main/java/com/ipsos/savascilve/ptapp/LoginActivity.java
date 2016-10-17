@@ -418,7 +418,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             RequestParams params = new RequestParams();
             params.put("username", mEmail);
             params.put("password", mPassword);
-            client.get(LOGIN_URL, params ,new AsyncHttpResponseHandler() {
+            client.get(LOGIN_URL, params, new AsyncHttpResponseHandler() {
                 // When the response returned by REST has Http response code '200'
                 @Override
                 public void onSuccess(String response) {

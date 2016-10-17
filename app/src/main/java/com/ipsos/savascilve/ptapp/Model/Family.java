@@ -11,6 +11,7 @@ public class Family {
     private String FamCode;
     private String FamName;
     private Date RegDate;
+    private String Sehir;
     private String Ilce;
     private String Mahalle;
     private String Cadde;
@@ -28,6 +29,17 @@ public class Family {
     private int Harcama;
     private int Bebek;
     private int EkAlkol;
+
+    public Family(String famCode, String famName, String sehir, String ilce, String mahalle, String cadde, String sokak, String daireNo) {
+        FamCode = famCode;
+        FamName = famName;
+        Sehir = sehir;
+        Ilce = ilce;
+        Mahalle = mahalle;
+        Cadde = cadde;
+        Sokak = sokak;
+        DaireNo = daireNo;
+    }
 
     public String getFamCode() {
         return FamCode;
@@ -52,6 +64,10 @@ public class Family {
     public void setRegDate(Date regDate) {
         RegDate = regDate;
     }
+
+    public String getSehir() { return Sehir; }
+
+    public void setSehir(String sehir) { Sehir = sehir; }
 
     public String getIlce() {
         return Ilce;
@@ -187,5 +203,9 @@ public class Family {
 
     public void setEkAlkol(int ekAlkol) {
         EkAlkol = ekAlkol;
+    }
+
+    public String getAddress() {
+        return Mahalle + Cadde + " Cad. " + Sokak + " Sok. No: " + DaireNo + " " + Ilce + " " + Sehir;
     }
 }
