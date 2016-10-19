@@ -73,6 +73,7 @@ public class TodayFamListFragment extends ListFragment {
     private void openFamDetailActivity(int position) {
         Family family = (Family)getListAdapter().getItem(position);
         Intent intent = new Intent(getActivity(), FamDetailActivity.class);
-        //intent.putExtra()
+        intent.putExtra(MainActivity.EXTRA_FAMCODE, family.getFamCode());
+
     }
 }

@@ -7,14 +7,54 @@
     android:layout_height="match_parent"
     tools:context="com.ipsos.savascilve.ptapp.FamDetailActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hane Kodu: "/>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_fam_code"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailFamCode"
+            style="@style/FamDetailText"
+            android:text="FamCode" />
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_city"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailCity"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_town"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailTown"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_district"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailDistrict"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/famDetailFamCode"
-        android:text="FamCode" />
 </LinearLayout>

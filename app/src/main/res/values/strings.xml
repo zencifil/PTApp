@@ -26,8 +26,10 @@
     <string name="navigation_send_mail">E-Posta Gönder</string>
     <string name="navigation_communication">İletişim</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ayarlar</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="form_fam_code">Hane: </string>
+    <string name="form_city">Şehir: </string>
+    <string name="form_town">İlçe: </string>
+    <string name="form_district">Mahalle: </string>
 </resources>
