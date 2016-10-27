@@ -1,6 +1,7 @@
 package com.ipsos.savascilve.ptapp.Model;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by zencifil on 11/10/2016.
@@ -29,6 +30,7 @@ public class Family {
     private int Harcama;
     private int Bebek;
     private int EkAlkol;
+    private List<Individual> Individuals;
 
     public Family(String famCode, String famName, String sehir, String ilce, String mahalle, String cadde, String sokak, String daireNo) {
         FamCode = famCode;
@@ -44,7 +46,6 @@ public class Family {
     public String getFamCode() {
         return FamCode;
     }
-
     public void setFamCode(String famCode) {
         FamCode = famCode;
     }
@@ -52,7 +53,6 @@ public class Family {
     public String getFamName() {
         return FamName;
     }
-
     public void setFamName(String famName) {
         FamName = famName;
     }
@@ -60,19 +60,16 @@ public class Family {
     public Date getRegDate() {
         return RegDate;
     }
-
     public void setRegDate(Date regDate) {
         RegDate = regDate;
     }
 
     public String getSehir() { return Sehir; }
-
     public void setSehir(String sehir) { Sehir = sehir; }
 
     public String getIlce() {
         return Ilce;
     }
-
     public void setIlce(String ilce) {
         Ilce = ilce;
     }
@@ -80,7 +77,6 @@ public class Family {
     public String getMahalle() {
         return Mahalle;
     }
-
     public void setMahalle(String mahalle) {
         Mahalle = mahalle;
     }
@@ -88,7 +84,6 @@ public class Family {
     public String getCadde() {
         return Cadde;
     }
-
     public void setCadde(String cadde) {
         Cadde = cadde;
     }
@@ -96,7 +91,6 @@ public class Family {
     public String getSokak() {
         return Sokak;
     }
-
     public void setSokak(String sokak) {
         Sokak = sokak;
     }
@@ -104,7 +98,6 @@ public class Family {
     public String getDaireNo() {
         return DaireNo;
     }
-
     public void setDaireNo(String daireNo) {
         DaireNo = daireNo;
     }
@@ -112,7 +105,6 @@ public class Family {
     public String getBinaadi() {
         return Binaadi;
     }
-
     public void setBinaadi(String binaadi) {
         Binaadi = binaadi;
     }
@@ -120,7 +112,6 @@ public class Family {
     public String getSemt() {
         return Semt;
     }
-
     public void setSemt(String semt) {
         Semt = semt;
     }
@@ -128,7 +119,6 @@ public class Family {
     public String getEvTel() {
         return EvTel;
     }
-
     public void setEvTel(String evTel) {
         EvTel = evTel;
     }
@@ -136,7 +126,6 @@ public class Family {
     public int getFamActive() {
         return FamActive;
     }
-
     public void setFamActive(int famActive) {
         FamActive = famActive;
     }
@@ -144,7 +133,6 @@ public class Family {
     public String getFldCode() {
         return FldCode;
     }
-
     public void setFldCode(String fldCode) {
         FldCode = fldCode;
     }
@@ -152,7 +140,6 @@ public class Family {
     public int getVisitDate() {
         return VisitDate;
     }
-
     public void setVisitDate(int visitDate) {
         VisitDate = visitDate;
     }
@@ -160,7 +147,6 @@ public class Family {
     public int getAvp() {
         return Avp;
     }
-
     public void setAvp(int avp) {
         Avp = avp;
     }
@@ -168,7 +154,6 @@ public class Family {
     public int getSp() {
         return Sp;
     }
-
     public void setSp(int sp) {
         Sp = sp;
     }
@@ -176,7 +161,6 @@ public class Family {
     public int getAlkol() {
         return Alkol;
     }
-
     public void setAlkol(int alkol) {
         Alkol = alkol;
     }
@@ -184,7 +168,6 @@ public class Family {
     public int getHarcama() {
         return Harcama;
     }
-
     public void setHarcama(int harcama) {
         Harcama = harcama;
     }
@@ -192,7 +175,6 @@ public class Family {
     public int getBebek() {
         return Bebek;
     }
-
     public void setBebek(int bebek) {
         Bebek = bebek;
     }
@@ -200,7 +182,6 @@ public class Family {
     public int getEkAlkol() {
         return EkAlkol;
     }
-
     public void setEkAlkol(int ekAlkol) {
         EkAlkol = ekAlkol;
     }
@@ -208,4 +189,7 @@ public class Family {
     public String getAddress() {
         return Mahalle + Cadde + " Cad. " + Sokak + " Sok. No: " + DaireNo + " " + Ilce + " " + Sehir;
     }
+
+    public List<Individual> getIndividuals() { return Individuals; }
+    public void setIndividuals(List<Individual> individuals) { Individuals = individuals; }
 }

@@ -1,4 +1,4 @@
-package com.ipsos.savascilve.ptapp;
+package com.ipsos.savascilve.ptapp.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.ipsos.savascilve.ptapp.Model.Family;
+import com.ipsos.savascilve.ptapp.R;
 
 import org.w3c.dom.Text;
 
