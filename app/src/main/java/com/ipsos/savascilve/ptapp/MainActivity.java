@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity
     public final static String EXTRA_USERNAME = "com.ipsos.savascilve.ptapp.USERNAME";
     public final static String EXTRA_EMAIL = "com.ipsos.savascilve.ptapp.EMAIL";
     public final static String EXTRA_FAMCODE = "com.ipsos.savascilve.ptapp.FAMCODE";
+    public final static String EXTRA_FAMNAME = "com.ipsos.savascilve.ptapp.FAMNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -32,4 +32,13 @@
     <string name="form_city">Şehir: </string>
     <string name="form_town">İlçe: </string>
     <string name="form_district">Mahalle: </string>
+    <string name="form_street">Cadde: </string>
+    <string name="form_road">Sokak: </string>
+    <string name="form_building_no">Bina No: </string>
+    <string name="form_door_no">Kapı No: </string>
+    <string name="form_zip_code">Posta Kodu: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

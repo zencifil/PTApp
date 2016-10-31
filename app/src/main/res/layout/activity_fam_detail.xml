@@ -17,8 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/famDetailFamCode"
-            style="@style/FamDetailText"
-            android:text="FamCode" />
+            style="@style/FamDetailText" />
     </LinearLayout>
     <LinearLayout style="@style/FamDetailHorizontalLayout">
         <TextView
@@ -56,5 +55,64 @@
             android:id="@+id/famDetailDistrict"
             style="@style/FamDetailText"/>
     </LinearLayout>
-
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_street"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailStreet"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_road"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailRoad"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_building_no"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailBuildingNo"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_door_no"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailDoorNo"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
+    <LinearLayout style="@style/FamDetailHorizontalLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_zip_code"
+            style="@style/FamDetailText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/famDetailZipCode"
+            style="@style/FamDetailText"/>
+    </LinearLayout>
 </LinearLayout>
